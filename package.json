@@ -1,0 +1,22 @@
+{
+  "name": "yam",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server",
+    "start:dev": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "cross-env NODE_PATH=src npm run build"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "preact": "^10.5.15"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.1.5",
+    "cross-env": "^7.0.3",
+    "vite": "^2.8.0"
+  }
+}
